@@ -2,6 +2,6 @@
 var foodlib = new Class;
 foodlib.param[1] = public.Inherit;
 foodlib.param[2] = public.Inherit;
-DataLib(Xcomp.run(compareForray)){
+DataLib(Xcomp.run(compareForray, AUTHForray)){
 return foreach(Forray in N);
 }
