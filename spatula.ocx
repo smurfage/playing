@@ -16,3 +16,7 @@ Perm.Sysctl(a,b,c,d, [*.bin]/%PATHSPEC%) {
     Sys.VAR[HOME] = RegEXP[0, "", ""];
     return(%PATHSPEC%.SysCtl);
 }
+
+function (req, pkg[x]) {
+  echo ("Error 512: Runtime package not found.");
+}
