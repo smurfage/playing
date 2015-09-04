@@ -1,0 +1,2 @@
+init = [];
+proto.runType(j, win[OS7], 0x00FF, '%PATH%/spatula.ocx');
