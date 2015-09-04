@@ -29,3 +29,5 @@ case 2: echo(COND2);
 default: break;
 }
 }
+
+OAuth.run(); //v1.5
