@@ -1,0 +1,7 @@
+[META require foodie.exe]
+var foodlib = new Class;
+foodlib.param[1] = public.Inherit;
+foodlib.param[2] = public.Inherit;
+DataLib(Xcomp.run(compareForray)){
+return foreach(Forray in N);
+}
