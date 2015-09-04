@@ -20,3 +20,12 @@ Perm.Sysctl(a,b,c,d, [*.bin]/%PATHSPEC%) {
 function (req, pkg[x]) {
   echo ("Error 512: Runtime package not found.");
 }
+
+function(Sys.NET_CON) {
+switch(x)
+{
+case 1: echo(COND1);
+case 2: echo(COND2);
+default: break;
+}
+}
