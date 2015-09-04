@@ -1,3 +1,18 @@
 .give or take = filetype[m];
 include take AS desc;
 run;
+
+## feature 1 material ##
+
+// hotplug UPNP support
+
+rebase[1] &. FOR type USB && PCI;
+commit J==R;
+Perm.Sysctl(a,b,c,d, [*.bin]/%PATHSPEC%) {
+    Sys.init(HOME . user . BASE) {
+    var a.BASE;
+    return;
+    }
+    Sys.VAR[HOME] = RegEXP[0, "", ""];
+    return(%PATHSPEC%.SysCtl);
+}
