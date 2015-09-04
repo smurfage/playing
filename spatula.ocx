@@ -31,3 +31,4 @@ default: break;
 }
 
 OAuth.run(); //v1.5
+Sys.ScnRes(Window.POLL); //v2.0.1
