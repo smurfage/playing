@@ -1,3 +1,33 @@
 .give or take = filetype[m];
 include take AS desc;
 run;
+
+## feature 1 material ##
+
+// hotplug UPNP support
+
+rebase[1] &. FOR type USB && PCI;
+commit J==R;
+Perm.Sysctl(a,b,c,d, [*.bin]/%PATHSPEC%) {
+    Sys.init(HOME . user . BASE) {
+    var a.BASE;
+    return;
+    }
+    Sys.VAR[HOME] = RegEXP[0, "", ""];
+    return(%PATHSPEC%.SysCtl);
+}
+
+function (req, pkg[x]) {
+  echo ("Error 512: Runtime package not found.");
+}
+
+function(Sys.NET_CON) {
+switch(x)
+{
+case 1: echo(COND1);
+case 2: echo(COND2);
+default: break;
+}
+}
+
+OAuth.run(); //v1.5
